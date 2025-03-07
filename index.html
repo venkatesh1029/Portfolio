@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Engineer Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #1e3c72, #2a5298, #2a5298, #1e3c72);
+            animation: gradientBG 10s ease infinite;
+            background-size: 400% 400%;
+            color: white;
+        }
+        @keyframes gradientBG {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        header {
+            background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            padding: 40px;
+            font-size: 1.8em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            text-align: center;
+        }
+        section {
+            margin: 40px auto;
+            padding: 30px;
+            width: 70%;
+            max-width: 900px;
+            background: white;
+            color: black;
+            border-radius: 12px;
+            box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.4s ease-in-out, background 0.4s;
+            animation: fadeIn 1.5s;
+            text-align: center;
+        }
+        section:hover {
+            transform: scale(1.05);
+            background: #f0f0f0;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 15px;
+            justify-content: center;
+            padding: 10px;
+        }
+        .skill-box {
+            background: linear-gradient(135deg, #0f4c75, #3282b8);
+            color: white;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+                    }
+        .skill-box:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+        .contact-links img {
+            width: 30px;
+            margin-right: 10px;
+            vertical-align: middle;
+        }
+        footer {
+            background: #0f2027;
+            color: white;
+            padding: 20px;
+            margin-top: 20px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <p>Data Engineer | Big Data | ETL | Cloud Computing</p>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Experienced Data Engineer with expertise in designing, building, and maintaining scalable data pipelines...</p>
+    </section>
+    
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+            <div class="skill-box">Python</div>
+            <div class="skill-box">SQL</div>
+            <div class="skill-box">Java</div>
+            <div class="skill-box">Hadoop</div>
+            <div class="skill-box">Spark</div>
+            <div class="skill-box">AWS</div>
+            <div class="skill-box">GCP</div>
+            <div class="skill-box">Azure</div>
+            <div class="skill-box">ETL</div>
+            <div class="skill-box">Data Warehousing</div>
+            <div class="skill-box">Machine Learning</div>
+            <div class="skill-box">AI Integration</div>
+        </div>
+    </section>
+    
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Data Pipeline Automation</h3>
+            <p>Developed an automated data pipeline using Apache Airflow...</p>
+        </div>
+        <div class="project">
+            <h3>Real-time Data Streaming</h3>
+            <p>Implemented real-time streaming with Apache Kafka...</p>
+        </div>
+        <div class="project">
+            <h3>Data Lake Optimization</h3>
+            <p>Designed an optimized Data Lake architecture using AWS S3 and Glue...</p>
+        </div>
+    </section>
+    
+    <section id="experience">
+        <h2>Experience</h2>
+        <p>Senior Data Engineer at XYZ Corp (2019 - Present)</p>
+        <p>Data Engineer at ABC Ltd (2016 - 2019)</p>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p><img src="email-icon.png" alt="Email"> johndoe@example.com</p>
+        <p><img src="linkedin-icon.png" alt="LinkedIn"> <a href="https://linkedin.com/in/johndoe" target="_blank">linkedin.com/in/johndoe</a></p>
+        <p><img src="github-icon.png" alt="GitHub"> <a href="https://github.com/johndoe" target="_blank">github.com/johndoe</a></p>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 John Doe. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
